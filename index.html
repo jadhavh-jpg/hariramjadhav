@@ -3,44 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hari Ram Jadhav | Portfolio</title>
+<title>Hari Ram Jadhav | Digital Marketer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6fb;color:#222}
-header{background:#1e3a8a;color:white;padding:40px 20px;text-align:center}
-header h1{margin:0;font-size:36px}
-header p{margin:10px 0 0}
-nav{background:#0f172a;padding:10px;text-align:center}
-nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold}
-section{padding:50px 10%;}
-.card{background:white;border-radius:10px;padding:20px;margin:15px 0;box-shadow:0 5px 15px rgba(0,0,0,0.08)}
-.skills span{display:inline-block;background:#1e3a8a;color:white;padding:8px 14px;border-radius:20px;margin:5px;font-size:14px}
-.projects a{display:block;color:#1e3a8a;margin:8px 0;font-weight:bold}
-footer{background:#0f172a;color:white;text-align:center;padding:20px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#f5f7fb;color:#222}
+
+/* NAVBAR */
+nav{
+position:sticky;
+top:0;
+background:#0f172a;
+padding:14px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:0 16px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#60a5fa;
+}
+
+/* HERO */
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:80px 10%;
+background:white;
+flex-wrap:wrap;
+}
+
+.hero img{
+width:260px;
+border-radius:12px;
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.hero-text h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+color:#555;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 26px;
+background:#2563eb;
+color:white;
+border-radius:6px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1e40af;
+transform:translateY(-3px);
+}
+
+section{
+padding:70px 10%;
+}
+
+h2{
+font-size:30px;
+margin-bottom:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+margin-bottom:25px;
+}
+
+/* SKILLS */
+.skills span{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:8px 14px;
+border-radius:20px;
+margin:6px;
+font-size:14px;
+}
+
+/* RESULTS */
+.results{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.result-box{
+background:white;
+padding:35px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.result-box h3{
+font-size:34px;
+color:#2563eb;
+}
+
+/* CASE STUDY */
+.case{
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.case h3{
+margin-bottom:15px;
+}
+
+.case ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+.case li{
+margin-bottom:10px;
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.gallery div{
+height:200px;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+font-weight:600;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.gallery div:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 35px rgba(0,0,0,0.15);
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:200px;
+}
+}
+
 </style>
 </head>
-<body>
 
-<header>
-<h1>Hari Ram Jadhav</h1>
-<p>Digital Marketer | Graphic Designer | Website Creator</p>
-<p>📞 9300594567 | ✉ jadhav.h@gmail.com</p>
-</header>
+<body>
 
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
+<a href="#results">Results</a>
+<a href="#case">Case Study</a>
+<a href="#gallery">Designs</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </nav>
 
+<!-- HERO -->
+<section class="hero">
+
+<img src="your-photo.jpg" alt="Hari Ram Jadhav">
+
+<div class="hero-text">
+<h1>Hari Ram Jadhav</h1>
+<p>Digital Marketer | Graphic Designer | Website Creator</p>
+<p>I help businesses grow online using digital marketing, branding and websites.</p>
+
+<a class="btn" href="#contact">Work With Me</a>
+</div>
+
+</section>
+
+<!-- ABOUT -->
 <section id="about">
 <h2>About Me</h2>
 <div class="card">
-<p>I am Hari Ram Jadhav, a Digital Marketer and Graphic Designer from Pune. I have hands-on experience in social media promotion, website creation, branding and graphic design. I specialize in growing communities and promoting businesses through organic digital marketing strategies.</p>
+I am a Digital Marketer and Graphic Designer based in Pune. I have practical experience in branding, website development and social media marketing. I specialize in growing online communities and helping businesses increase their visibility using organic marketing strategies.
 </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
 <h2>Skills</h2>
 <div class="card skills">
@@ -53,15 +238,17 @@ footer{background:#0f172a;color:white;text-align:center;padding:20px}
 </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section id="experience">
 <h2>Work Experience</h2>
+
 <div class="card">
 <h3>Kasturi Divine</h3>
 <p>Digital Marketing & Graphic Designer (2023 - Present)</p>
 <ul>
-<li>Designed logos, posters and promotional graphics</li>
-<li>Promoted brand through WhatsApp marketing</li>
-<li>Grew community from 0 to 500 members organically</li>
+<li>Created brand graphics, posters and marketing materials</li>
+<li>Promoted products using WhatsApp marketing strategy</li>
+<li>Helped build a strong online community</li>
 </ul>
 </div>
 
@@ -69,32 +256,114 @@ footer{background:#0f172a;color:white;text-align:center;padding:20px}
 <h3>Internship – Manoj Tak</h3>
 <p>Digital Marketing Intern (Jan 2023 - Mar 2023)</p>
 <ul>
-<li>Worked on digital marketing campaigns</li>
-<li>Helped with brand promotion strategies</li>
+<li>Worked on digital campaigns</li>
+<li>Supported social media marketing activities</li>
 </ul>
 </div>
+
 </section>
 
+<!-- RESULTS -->
+<section id="results">
+<h2>Digital Marketing Results</h2>
+
+<div class="results">
+
+<div class="result-box">
+<h3>500+</h3>
+<p>WhatsApp Community Members</p>
+</div>
+
+<div class="result-box">
+<h3>3</h3>
+<p>Live Websites Created</p>
+</div>
+
+<div class="result-box">
+<h3>3+</h3>
+<p>Years Practical Experience</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CASE STUDY -->
+<section id="case">
+<h2>Case Study – Kasturi Divine Growth</h2>
+
+<div class="case">
+
+<h3>Project Overview</h3>
+<p>Kasturi Divine is a brand where I worked on digital marketing and branding strategies.</p>
+
+<h3>Challenge</h3>
+<ul>
+<li>No online community initially</li>
+<li>No digital marketing budget</li>
+<li>Brand awareness was low</li>
+</ul>
+
+<h3>Strategy</h3>
+<ul>
+<li>Used WhatsApp organic marketing</li>
+<li>Created attractive posters and graphics</li>
+<li>Shared promotional messages regularly</li>
+<li>Encouraged members to invite others</li>
+</ul>
+
+<h3>Results</h3>
+<ul>
+<li>Community grew from 0 to 500+ members</li>
+<li>Brand awareness increased locally</li>
+<li>Sales and engagement improved</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- DESIGN GALLERY -->
+<section id="gallery">
+<h2>Graphic Design Gallery</h2>
+
+<div class="gallery">
+
+<div>Poster Design</div>
+<div>Logo Design</div>
+<div>Social Media Post</div>
+<div>Brand Promotion Design</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
 <section id="projects">
 <h2>Website Projects</h2>
-<div class="card projects">
-<a href="https://www.kasturidivine.com" target="_blank">www.kasturidivine.com</a>
-<a href="https://www.paymoney24.in" target="_blank">www.paymoney24.in</a>
-<a href="https://www.solvixtech.in" target="_blank">www.solvixtech.in</a>
+
+<div class="card">
+<p><b>www.kasturidivine.com</b></p>
+<p><b>www.paymoney24.in</b></p>
+<p><b>www.solvixtech.in</b></p>
 </div>
+
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
 <h2>Contact</h2>
+
 <div class="card">
-<p><strong>Phone:</strong> 9300594567 / 8821964313</p>
-<p><strong>Email:</strong> jadhav.h@gmail.com</p>
-<p><strong>Address:</strong> Bhosari, Pune, Maharashtra, India</p>
+<p><b>Phone:</b> 9300594567 / 8821964313</p>
+<p><b>Email:</b> jadhav.h@gmail.com</p>
+<p><b>Location:</b> Pune, Maharashtra, India</p>
 </div>
+
 </section>
 
 <footer>
-<p>© 2026 Hari Ram Jadhav Portfolio</p>
+© 2026 Hari Ram Jadhav Portfolio
 </footer>
 
 </body>
